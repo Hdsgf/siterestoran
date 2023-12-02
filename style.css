@@ -1,0 +1,606 @@
+body {
+    margin: 0;  /*убираем белые полоски по бокам*/
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Preahvihear', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Cookie', cursive;
+
+    font-family: 'Cookie', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0px 166px;
+}
+
+.header {
+    background-image: url(img/bg.jpg);
+    height: 100vh; /*на весь моник пользователя растягиваем*/
+    background-repeat: no-repeat; /*что не повторялась картинка*/
+    background-size: cover;  /* растягиваем на весь экран раномерно*/
+}
+
+.header-line {
+    padding-top: 50px;  /*делаем отступ от верха (как на шаблоне) */
+    display: flex; /*делаем список в строку*/
+    align-items: center; /*выравниваем по центру*/
+
+    justify-content: space-around; /*растягиваем все элементы*/
+}
+
+.nav-item {
+    color: #fff;      /*делаем текст "главная", "меню"... белым*/
+    text-decoration: none;   /*убираем подчеркивания*/
+    font-weight: 700;  /*делаем толщину*/
+    font-size: 14px;
+
+    margin-right: 25px; /*двигаем на 25 пикселей текст главная о нас бронь...*/
+
+    transition: color 0.3s;
+}
+/*когда наводишься мышкой*/
+.nav-item:hover {
+    color: #b41010; 
+}
+
+.cart {
+    position: relative;
+
+    border-right: 1px solid #FFFFFF;  /*делаем палочку рядом с корзиной*/
+    padding-right: 130px; /*двигаем ее*/
+    height: 50px;  /*делаем больше*/
+}
+
+/*редактируем картинку корзины*/
+.cart-img {
+    position: absolute;
+    top: 18px;
+    left: 100px; /*двигаем влево*/
+}
+
+.num {
+    color: #fff; /*делаем номер белым цветом*/
+    text-decoration: none; /*убераем подчеркивание*/
+    font-weight: 700;
+
+    transition: color 0.3s;
+}
+
+.num:hover {
+    color:#b41010;
+}
+
+.phone-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.phone-holder {
+    display: flex;
+    align-items: center;
+
+}
+
+.button{
+    font-family: Open Sans;
+    background-color: #FF7400;  /*делаем кнопку оранжевой*/
+    color:#fff;
+    text-decoration: none;
+    padding: 14px 19px; /*делаем отспут : сверху по бокам */
+    font-weight: 700; /*делаем толще буквы*/
+    
+
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ad4e01;
+}
+
+.header-down {
+    position: relative;
+}
+
+/*копируем параметры с фигмы */
+.header-title {
+    color: #D67E35;
+    font-family: Tinos;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /*копируем шрифты с google fonts*/
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Preahvihear', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Tinos', serif;
+
+    text-align: center; /*выравниваем по центру текст*/
+    position: absolute;
+    left: 0; /*чтобы был у левого края*/
+    margin-block-start: 222px; /*делаем отступ сверху*/
+    left: 110px;
+
+    margin-bottom: 12px;  /*отступ между дом лучшей еды и наш ресторан */
+}
+
+.header-subtitle {
+    color: #D67E35;
+    font-weight: 400;
+    font-size: 80px;
+    font-family: Tinos;
+}
+
+.sup-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Open Sans;
+}
+
+/*делаем полоску (как на шаблоне)*/
+.sup-title::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    left: 82px;
+    top: 160px;
+}
+
+/*еще одну полоску*/
+.sup-title::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    left: 335px;
+    top: 160px;
+}
+
+/*VIEW MENU*/
+.header-button {
+    font-family: Open Sans;
+    background-color: #FF7400;
+    padding: 14px 28px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+
+
+.header-button:hover {
+    background-color: #ad4e01;
+}
+
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 349px; /*размер карточки*/
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.10); /*делаем тени как на шаблоне*/
+    margin-right: 31px; /*делаем между ними промежуток*/ 
+    /*чтобы карточки (залазили) на фон*/
+    background-color: #fff;
+    margin-top: -80px;
+    /*делаем отступ снизу*/
+    padding:  10px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px; /*делаем отступ сверху*/
+}
+
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    /*фкопируем из шаблона*/
+    color: #2C2C2C;
+    font-family: Tinos;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /*отступ между тайтлом и текстом*/
+    margin-bottom: 20px;
+}
+
+.card-title span {
+    color: #D67E35;
+    margin-left: 2px;
+}
+
+.card-desc {
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #656363;
+}
+
+.history {
+    margin-top: 166px;
+    margin-left: 220px;
+    padding-bottom: 260px;
+}
+
+.history-title {
+    font-family: 'Tinos', 'serif';
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-bottom: 21px;
+    left: 220px;
+}
+
+.history-title span {
+    color: #D67E34;;
+}
+
+.history-desc {
+    color: #656363;
+    font-size: 16px;
+    width: 444px;
+    text-align: center;
+}
+
+.history-number {
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.number-item {
+    margin-right: 60px; /*делаем между цифрами и текстом отступ*/
+    text-align: center; /*выравниваем*/
+    font-size: 25px; /*делаем цифры и текст больше*/
+    color: #BC9060;
+}
+
+
+/*делаем текст под цифрами*/
+.number-item span {
+    display: block;
+    color: #000;
+}
+
+.history-images {
+    position: relative;
+}
+
+.history-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*редактируем картинки*/
+.imgages-1 {
+    position: absolute;
+    z-index: 820;
+    top: 20px;
+    left: -750px;
+}
+
+.imgages-2 {
+    position: absolute;
+    z-index: 500;
+    top: 127px;
+    left: -450px;
+}
+
+.imgages-3 {
+    position: absolute;
+    z-index: 400;
+    top: -70px;
+    left: -570px;
+}
+/**/
+
+
+.black-block {
+    background-image: url(img/bg-2.jpg);
+    padding: 80px 165px;
+    
+}
+
+
+.left-title {
+    color: #D67E34;
+    font-weight: 400;
+    font-size: 52px;
+    font-family: Tinos;
+}
+
+.left-down-text {
+    color:#FFF;
+    font-size: 24px;  
+    font-weight: 700;
+    font-family: Open Sans;
+    padding-top: 20px;
+}
+
+
+.right-btn {
+    background-color: #FF7400;  
+    color:#fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 14px 19px;
+
+    transition:background-color 0.3s;
+}
+
+
+.right-btn:hover {
+    background-color: #ad4e01;
+}
+
+.block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dishes-title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 140px;
+    padding-top: 132px;
+}
+
+.dishes-title span {
+    color: #D67E34;
+}
+
+
+.burgers {
+    display: flex; 
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.burgers-image {
+    margin-right: 29px;
+}
+
+.burger-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+ 
+}
+
+.burger-text {
+    color: #000;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    margin-left: 29px;
+}
+
+
+
+.menu {
+    background-image: url(img/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  /*чтобы растяннулось на весь экран*/
+    padding-bottom: 100px;
+}
+
+
+.menu-title {
+    color: #FFF;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    padding-top: 98px;
+    margin-left: 680px;
+    padding-bottom: 138px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.menu-item {
+    background-color: #fff;
+    text-align: center;
+    width: 23%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    margin-right: 40px;
+}
+
+.menu-text {
+    color: #000;
+    font-family: Tinos;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.menu-subtext {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.menu-btn {
+    background-color: #D67E34;
+    text-decoration: none;
+    padding: 14px 67px;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.menu-button {
+    margin-top: 20px;
+}
+
+.price-img {
+    position: absolute;
+    right: 42px;
+    bottom: 0;
+}
+
+.menu-image {
+    position: relative;
+}
+
+.price420 {
+    position: absolute;
+    bottom: 32px;
+    right: 70px;
+    color: #FFF;
+    font-family: Cookie;
+    font-size: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 226px;
+}
+
+.coment {
+    background-color: #E5E5E5;
+    padding-top: 104px;
+    padding-bottom: 192px;
+}
+
+.coment-text {
+    color: #000;
+    font-family: Open Sans;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.coment-image {
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.coment-type {
+    margin-bottom: 9px;
+    text-align: center;
+
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.coment-name {
+    text-align: center;
+
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.galery-title {
+    text-align: center;
+
+    padding-top: 101px;
+
+    color: #000;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+
+    margin-bottom: 60px;
+}
+
+.galery-title span {
+    color: #D67E34;
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+}
+
+.galery-content {
+    display: flex;
+    justify-content: center;
+}
+
+.galery-left {
+    margin-right: 30px;
+}
+
+.galery-up {
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.galery-down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tekst {
+    display: none;
+    color: #D67E34;
+    font-family: Tinos;
+    font-size: 44px;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 1500px) {    /*ставим макс ширину 1500px*/
+    
+    .galery-content {
+        display: block;
+    }
+
+    .img-gal,
+    .galery-up,
+    .galery-down {
+        display: block;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img-gal {
+        margin-bottom: 20px;
+    }
+
+    .galery-left {
+        margin-right: 0px;
+    }
+}
